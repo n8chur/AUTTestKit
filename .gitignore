@@ -1,0 +1,4 @@
+Carthage/
+*.xccheckout
+xcuserdata
+.DS_Store
