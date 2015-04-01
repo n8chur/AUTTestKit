@@ -14,6 +14,9 @@
 		54E2DC0B1ACC108A009B4670 /* AUTDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBD71ACBF93C009B4670 /* AUTDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54E2DC0C1ACC108F009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DBDE1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m */; };
 		54E2DC0D1ACC108F009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DBDA1ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m */; };
+		54E2DC0E1ACC1185009B4670 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD01ACBF910009B4670 /* Expecta.framework */; };
+		54E2DC0F1ACC1185009B4670 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD11ACBF910009B4670 /* Nocilla.framework */; };
+		54E2DC101ACC1185009B4670 /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD21ACBF910009B4670 /* Specta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E2DC0E1ACC1185009B4670 /* Expecta.framework in Frameworks */,
+				54E2DC0F1ACC1185009B4670 /* Nocilla.framework in Frameworks */,
+				54E2DC101ACC1185009B4670 /* Specta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +370,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -385,6 +395,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AUTTestKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
