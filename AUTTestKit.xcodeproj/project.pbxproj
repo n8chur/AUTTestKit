@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		54E2DBF21ACC0730009B4670 /* AUTTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */; };
+		54E2DC081ACC108A009B4670 /* AUTTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBB91ACBF7A5009B4670 /* AUTTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E2DC091ACC108A009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBDD1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E2DC0A1ACC108A009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBD91ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E2DC0B1ACC108A009B4670 /* AUTDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBD71ACBF93C009B4670 /* AUTDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E2DC0C1ACC108F009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DBDE1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m */; };
+		54E2DC0D1ACC108F009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DBDA1ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +145,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E2DC0A1ACC108A009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h in Headers */,
+				54E2DC091ACC108A009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h in Headers */,
+				54E2DC0B1ACC108A009B4670 /* AUTDefines.h in Headers */,
+				54E2DC081ACC108A009B4670 /* AUTTestKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E2DC0D1ACC108F009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m in Sources */,
+				54E2DC0C1ACC108F009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +448,7 @@
 				54E2DBFC1ACC0730009B4670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "AUTTestKitTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +457,7 @@
 				54E2DBFF1ACC0730009B4670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
