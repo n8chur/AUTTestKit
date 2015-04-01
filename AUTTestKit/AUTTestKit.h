@@ -16,5 +16,6 @@ FOUNDATION_EXPORT const unsigned char AUTTestKitVersionString[];
 
 #import <AUTTestKit/AUTDefines.h>
 
-#import <AUTTestKit/LSStubResponseDSL+AUTJSONAdditions.h>
 #import <AUTTestKit/LSStubRequestDSL+AUTJSONAdditions.h>
+#import <AUTTestKit/LSStubResponseDSL+AUTJSONAdditions.h>
+#import <AUTTestKit/SPTExampleGroup+AUTNocillaAdditions.h>

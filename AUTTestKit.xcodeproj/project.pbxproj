@@ -17,6 +17,8 @@
 		54E2DC0E1ACC1185009B4670 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD01ACBF910009B4670 /* Expecta.framework */; };
 		54E2DC0F1ACC1185009B4670 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD11ACBF910009B4670 /* Nocilla.framework */; };
 		54E2DC101ACC1185009B4670 /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD21ACBF910009B4670 /* Specta.framework */; };
+		54E2DC171ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E2DC181ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		54E2DBDE1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSStubRequestDSL+AUTJSONAdditions.m"; sourceTree = "<group>"; };
 		54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AUTTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E2DBF11ACC0730009B4670 /* AUTTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUTTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPTExampleGroup+AUTNocillaAdditions.h"; sourceTree = "<group>"; };
+		54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPTExampleGroup+AUTNocillaAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				54E2DBB91ACBF7A5009B4670 /* AUTTestKit.h */,
+				54E2DC191ACC1387009B4670 /* Specta Additions */,
 				54E2DBE11ACBFA9D009B4670 /* Nocilla Additions */,
 				54E2DBB71ACBF7A5009B4670 /* Supporting Files */,
 			);
@@ -144,6 +149,15 @@
 			name = "Nocilla Additions";
 			sourceTree = "<group>";
 		};
+		54E2DC191ACC1387009B4670 /* Specta Additions */ = {
+			isa = PBXGroup;
+			children = (
+				54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */,
+				54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */,
+			);
+			name = "Specta Additions";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -155,6 +169,7 @@
 				54E2DC091ACC108A009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h in Headers */,
 				54E2DC0B1ACC108A009B4670 /* AUTDefines.h in Headers */,
 				54E2DC081ACC108A009B4670 /* AUTTestKit.h in Headers */,
+				54E2DC171ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E2DC181ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m in Sources */,
 				54E2DC0D1ACC108F009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m in Sources */,
 				54E2DC0C1ACC108F009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m in Sources */,
 			);
