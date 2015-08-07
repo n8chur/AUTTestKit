@@ -1,0 +1,18 @@
+//
+//  Specs.pch
+//  AUTTestKit
+//
+//  Created by Sylvain Rebaud on 7/21/15.
+//  Copyright (c) 2015 Automatic. All rights reserved.
+//
+
+#ifndef AUTTestKit_Specs_pch
+#define AUTTestKit_Specs_pch
+
+#import <AUTTestKit/AUTTestKit.h>
+
+#import <Specta/Specta.h>
+#import <Expecta/Expecta.h>
+#import <Nocilla/Nocilla.h>
+
+#endif

@@ -7,7 +7,7 @@
 //
 
 #import <objc/runtime.h>
-#import <Nocilla/Nocilla.h>
+@import Nocilla;
 
 #import "SPTExampleGroup+AUTNocillaAdditions.h"
 

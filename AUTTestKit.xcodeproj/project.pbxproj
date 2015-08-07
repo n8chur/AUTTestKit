@@ -11,7 +11,6 @@
 		54E2DC081ACC108A009B4670 /* AUTTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBB91ACBF7A5009B4670 /* AUTTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54E2DC091ACC108A009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBDD1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54E2DC0A1ACC108A009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBD91ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54E2DC0B1ACC108A009B4670 /* AUTDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBD71ACBF93C009B4670 /* AUTDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54E2DC0C1ACC108F009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DBDE1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m */; };
 		54E2DC0D1ACC108F009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DBDA1ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m */; };
 		54E2DC0E1ACC1185009B4670 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD01ACBF910009B4670 /* Expecta.framework */; };
@@ -19,6 +18,15 @@
 		54E2DC101ACC1185009B4670 /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD21ACBF910009B4670 /* Specta.framework */; };
 		54E2DC171ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54E2DC181ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */; };
+		E4BC53B11B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC53B01B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m */; };
+		E4BC53B21B5E2E1A000F01B2 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD01ACBF910009B4670 /* Expecta.framework */; };
+		E4BC53B31B5E2E1A000F01B2 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD11ACBF910009B4670 /* Nocilla.framework */; };
+		E4BC53B41B5E2E1A000F01B2 /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD21ACBF910009B4670 /* Specta.framework */; };
+		E4BC53B61B5E2E3E000F01B2 /* Expecta.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD01ACBF910009B4670 /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4BC53B71B5E2E3E000F01B2 /* Nocilla.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD11ACBF910009B4670 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4BC53B81B5E2E3E000F01B2 /* Specta.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD21ACBF910009B4670 /* Specta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4BC53BC1B5E314C000F01B2 /* AUTCustomBodyMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BC53BA1B5E314C000F01B2 /* AUTCustomBodyMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4BC53BD1B5E314C000F01B2 /* AUTCustomBodyMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC53BB1B5E314C000F01B2 /* AUTCustomBodyMatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,23 +39,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E4BC53B51B5E2E36000F01B2 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E4BC53B61B5E2E3E000F01B2 /* Expecta.framework in Copy Frameworks */,
+				E4BC53B71B5E2E3E000F01B2 /* Nocilla.framework in Copy Frameworks */,
+				E4BC53B81B5E2E3E000F01B2 /* Specta.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		54E2DBB81ACBF7A5009B4670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E2DBB91ACBF7A5009B4670 /* AUTTestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUTTestKit.h; sourceTree = "<group>"; };
 		54E2DBC51ACBF7A5009B4670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54E2DBC61ACBF7A5009B4670 /* AUTTestKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUTTestKitTests.m; sourceTree = "<group>"; };
 		54E2DBD01ACBF910009B4670 /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = Carthage/Build/iOS/Expecta.framework; sourceTree = "<group>"; };
 		54E2DBD11ACBF910009B4670 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		54E2DBD21ACBF910009B4670 /* Specta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Specta.framework; path = Carthage/Build/iOS/Specta.framework; sourceTree = "<group>"; };
-		54E2DBD71ACBF93C009B4670 /* AUTDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTDefines.h; sourceTree = "<group>"; };
 		54E2DBD91ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSStubResponseDSL+AUTJSONAdditions.h"; sourceTree = "<group>"; };
 		54E2DBDA1ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSStubResponseDSL+AUTJSONAdditions.m"; sourceTree = "<group>"; };
 		54E2DBDD1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSStubRequestDSL+AUTJSONAdditions.h"; sourceTree = "<group>"; };
 		54E2DBDE1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSStubRequestDSL+AUTJSONAdditions.m"; sourceTree = "<group>"; };
 		54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AUTTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54E2DBF11ACC0730009B4670 /* AUTTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUTTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E2DBF11ACC0730009B4670 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPTExampleGroup+AUTNocillaAdditions.h"; sourceTree = "<group>"; };
 		54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPTExampleGroup+AUTNocillaAdditions.m"; sourceTree = "<group>"; };
+		E4BC53B01B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSStubRequestDSL+AUTJSONAdditionsSpec.m"; sourceTree = "<group>"; };
+		E4BC53B91B5E2F52000F01B2 /* Specs.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Specs.pch; sourceTree = "<group>"; };
+		E4BC53BA1B5E314C000F01B2 /* AUTCustomBodyMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTCustomBodyMatcher.h; sourceTree = "<group>"; };
+		E4BC53BB1B5E314C000F01B2 /* AUTCustomBodyMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTCustomBodyMatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +92,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E2DBF21ACC0730009B4670 /* AUTTestKit.framework in Frameworks */,
+				E4BC53B21B5E2E1A000F01B2 /* Expecta.framework in Frameworks */,
+				E4BC53B31B5E2E1A000F01B2 /* Nocilla.framework in Frameworks */,
+				E4BC53B41B5E2E1A000F01B2 /* Specta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				54E2DBB61ACBF7A5009B4670 /* AUTTestKit */,
-				54E2DBC31ACBF7A5009B4670 /* AUTTestKitTests */,
+				54E2DBC31ACBF7A5009B4670 /* Specs */,
 				54E2DBD61ACBF914009B4670 /* Frameworks */,
 				54E2DBB51ACBF7A5009B4670 /* Products */,
 			);
@@ -86,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */,
-				54E2DBF11ACC0730009B4670 /* AUTTestKitTests.xctest */,
+				54E2DBF11ACC0730009B4670 /* Specs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,18 +134,18 @@
 		54E2DBB71ACBF7A5009B4670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				54E2DBD71ACBF93C009B4670 /* AUTDefines.h */,
 				54E2DBB81ACBF7A5009B4670 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		54E2DBC31ACBF7A5009B4670 /* AUTTestKitTests */ = {
+		54E2DBC31ACBF7A5009B4670 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				54E2DBC61ACBF7A5009B4670 /* AUTTestKitTests.m */,
+				E4BC53B01B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m */,
 				54E2DBC41ACBF7A5009B4670 /* Supporting Files */,
 			);
+			name = Specs;
 			path = AUTTestKitTests;
 			sourceTree = "<group>";
 		};
@@ -124,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				54E2DBC51ACBF7A5009B4670 /* Info.plist */,
+				E4BC53B91B5E2F52000F01B2 /* Specs.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -145,6 +175,8 @@
 				54E2DBDE1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m */,
 				54E2DBD91ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h */,
 				54E2DBDA1ACBFA50009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m */,
+				E4BC53BA1B5E314C000F01B2 /* AUTCustomBodyMatcher.h */,
+				E4BC53BB1B5E314C000F01B2 /* AUTCustomBodyMatcher.m */,
 			);
 			name = "Nocilla Additions";
 			sourceTree = "<group>";
@@ -167,9 +199,9 @@
 			files = (
 				54E2DC0A1ACC108A009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h in Headers */,
 				54E2DC091ACC108A009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h in Headers */,
-				54E2DC0B1ACC108A009B4670 /* AUTDefines.h in Headers */,
 				54E2DC081ACC108A009B4670 /* AUTTestKit.h in Headers */,
 				54E2DC171ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h in Headers */,
+				E4BC53BC1B5E314C000F01B2 /* AUTCustomBodyMatcher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,22 +227,23 @@
 			productReference = 54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		54E2DBF01ACC0730009B4670 /* AUTTestKitTests */ = {
+		54E2DBF01ACC0730009B4670 /* Specs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "AUTTestKitTests" */;
+			buildConfigurationList = 54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "Specs" */;
 			buildPhases = (
 				54E2DBED1ACC0730009B4670 /* Sources */,
 				54E2DBEE1ACC0730009B4670 /* Frameworks */,
 				54E2DBEF1ACC0730009B4670 /* Resources */,
+				E4BC53B51B5E2E36000F01B2 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				54E2DBF41ACC0730009B4670 /* PBXTargetDependency */,
 			);
-			name = AUTTestKitTests;
+			name = Specs;
 			productName = AUTTestKitTests;
-			productReference = 54E2DBF11ACC0730009B4670 /* AUTTestKitTests.xctest */;
+			productReference = 54E2DBF11ACC0730009B4670 /* Specs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +276,7 @@
 			projectRoot = "";
 			targets = (
 				54E2DBE61ACC0730009B4670 /* AUTTestKit */,
-				54E2DBF01ACC0730009B4670 /* AUTTestKitTests */,
+				54E2DBF01ACC0730009B4670 /* Specs */,
 			);
 		};
 /* End PBXProject section */
@@ -288,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4BC53BD1B5E314C000F01B2 /* AUTCustomBodyMatcher.m in Sources */,
 				54E2DC181ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m in Sources */,
 				54E2DC0D1ACC108F009B4670 /* LSStubResponseDSL+AUTJSONAdditions.m in Sources */,
 				54E2DC0C1ACC108F009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m in Sources */,
@@ -298,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4BC53B11B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +485,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_PREFIX_HEADER = AUTTestKitTests/Specs.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -469,7 +506,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_PREFIX_HEADER = AUTTestKitTests/Specs.pch;
 				INFOPLIST_FILE = AUTTestKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -499,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "AUTTestKitTests" */ = {
+		54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54E2DBFE1ACC0730009B4670 /* Debug */,
