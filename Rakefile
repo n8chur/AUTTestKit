@@ -55,7 +55,7 @@ private
 
 # Xcodebuild
 
-LIBRARY_NAME = 'AUTBatchLogging'
+LIBRARY_NAME = 'AUTTestKit'
 TEST_SDK = 'iphonesimulator'
 DERIVED_DATA_DIR = "#{ENV['HOME']}/Library/Developer/Xcode/DerivedData"
 
