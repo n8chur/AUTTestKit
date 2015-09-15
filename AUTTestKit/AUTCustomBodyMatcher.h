@@ -25,6 +25,8 @@ typedef BOOL(^BodyMatcher)(NSData *body, NSDictionary *expectedBody);
 
 @interface AUTCustomBodyMatcher : NSObject <LSMatcheable>
 
+- (instancetype)init NS_UNAVAILABLE;
+
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody;
 
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody customBodyMatcher:(BodyMatcher)bodyMatcher NS_DESIGNATED_INITIALIZER;

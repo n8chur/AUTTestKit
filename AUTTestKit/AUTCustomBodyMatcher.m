@@ -20,10 +20,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation AUTCustomBodyMatcher
 
+- (instancetype)init {
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"Use the designated initializer instead" userInfo:nil];
+}
+
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody {
+    NSParameterAssert(expectedBody != nil);
+
     return [self initWithExpectedBody:expectedBody customBodyMatcher:[LSStubRequestDSL defaultJSONBodyMatcher]];
 }
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody customBodyMatcher:(BodyMatcher)bodyMatcher {
+    NSParameterAssert(expectedBody != nil);
+
     self = [super init];
     
     if (self) {
