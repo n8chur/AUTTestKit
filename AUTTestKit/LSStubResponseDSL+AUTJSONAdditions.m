@@ -15,7 +15,7 @@
         NSError *error;
         NSData *data = [NSJSONSerialization dataWithJSONObject:body options:0 error:&error];
 
-        NSAssert(data != nil, @"Could not serialize %@, received error: %@", body, error.localizedDescription);
+        NSAssert(data != nil, @"Could not serialize %@, received error: %@", body, error);
 
         return self
             .withHeaders(@{ @"Content-Type": @"application/json" })
@@ -23,4 +23,22 @@
     };
 }
 
+- (ResponseWithJSONBodyMethod)withJSONString {
+    return ^(NSString *body) {
+        NSParameterAssert([body isKindOfClass:NSString.class]);
+        
+        NSData *data = [body dataUsingEncoding:NSUTF8StringEncoding];
+        
+        NSAssert(data != nil, @"Could not convert %@ to data", body);
+        
+        NSError *error;
+        id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        
+        NSAssert(jsonObj != nil, @"Invalid JSON string %@, received error: %@", body, error);
+        
+        return self
+            .withHeaders(@{ @"Content-Type": @"application/json" })
+            .withBody(data);
+    };
+}
 @end

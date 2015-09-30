@@ -14,4 +14,6 @@ typedef LSStubResponseDSL *(^ResponseWithJSONBodyMethod)(id);
 
 - (ResponseWithJSONBodyMethod)withJSON;
 
+- (ResponseWithJSONBodyMethod)withJSONString;
+
 @end
