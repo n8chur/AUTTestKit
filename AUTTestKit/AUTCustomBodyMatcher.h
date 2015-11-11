@@ -23,16 +23,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param expectedBody The expected json (NSDictionary)
 typedef BOOL(^BodyMatcher)(NSData *body, NSDictionary *expectedBody);
 
+/// A default matcher for a JSON string
+extern BodyMatcher defaultJSONBodyMatcher;
+
 @interface AUTCustomBodyMatcher : NSObject <LSMatcheable>
 
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody;
 
-- (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody customBodyMatcher:(BodyMatcher)bodyMatcher NS_DESIGNATED_INITIALIZER;
-
-@property (nonatomic, readonly) NSDictionary *expectedBody;
-@property (nonatomic, readonly, copy) BodyMatcher bodyMatcher;
+- (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody customBodyMatcher:(nullable BodyMatcher)bodyMatcher NS_DESIGNATED_INITIALIZER;
 
 @end
 

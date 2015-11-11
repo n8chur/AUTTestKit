@@ -11,6 +11,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+BodyMatcher defaultJSONBodyMatcher = ^BOOL(NSData *body, NSDictionary *expectedBody) {
+    // parse body into dictionary object
+    NSError *error = nil;
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:body options:0 error:&error];
+    if (json == nil || error != nil) {
+        return NO;
+    }
+    
+    // compare objects
+    return [json isEqualToDictionary:expectedBody];
+};
+
 @interface AUTCustomBodyMatcher ()
 
 @property (nonatomic) NSDictionary *expectedBody;
@@ -27,16 +39,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody {
     NSParameterAssert(expectedBody != nil);
 
-    return [self initWithExpectedBody:expectedBody customBodyMatcher:[LSStubRequestDSL defaultJSONBodyMatcher]];
+    return [self initWithExpectedBody:expectedBody customBodyMatcher:nil];
 }
-- (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody customBodyMatcher:(BodyMatcher)bodyMatcher {
+- (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody customBodyMatcher:(nullable BodyMatcher)bodyMatcher {
     NSParameterAssert(expectedBody != nil);
 
     self = [super init];
     
     if (self) {
         _expectedBody = expectedBody;
-        _bodyMatcher  = [bodyMatcher copy];
+        _bodyMatcher  = [bodyMatcher ?: defaultJSONBodyMatcher copy];
     }
     return self;
 }

@@ -8,35 +8,23 @@
 
 #import "LSStubRequestDSL+AUTJSONAdditions.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation LSStubRequestDSL (AUTJSONAdditions)
 
-+ (BodyMatcher)defaultJSONBodyMatcher {
-    return ^BOOL(NSData *body, NSDictionary* expectedBody) {
-        // parse body into dictionary object
-        NSError *error = nil;
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:body options:0 error:&error];
-        if (json == nil || error != nil) {
-            return NO;
-        }
-        
-        // compare objects
-        return [json isEqualToDictionary:expectedBody];
-    };
-}
-
 - (RequestWithJSONBodyMethod)withJSON {
-    return ^LSStubRequestDSL *(NSDictionary *expectedBody, BodyMatcher bodyMatcher) {
-        if (bodyMatcher == nil) {
-            bodyMatcher = [self.class defaultJSONBodyMatcher];
-            
-             return self
-                .withHeaders(@{ @"Content-Type": @"application/json" })
-                .withBody([[AUTCustomBodyMatcher alloc] initWithExpectedBody:expectedBody customBodyMatcher:bodyMatcher]);
-        } else {
-            return self
-                .withBody([[AUTCustomBodyMatcher alloc] initWithExpectedBody:expectedBody customBodyMatcher:bodyMatcher]);
-        }
+    return ^LSStubRequestDSL *(NSDictionary *expectedBody, BodyMatcher _Nullable bodyMatcher) {
+        NSParameterAssert(expectedBody != nil);
+        
+        LSStubRequestDSL *withBody = self
+            .withBody([[AUTCustomBodyMatcher alloc] initWithExpectedBody:expectedBody customBodyMatcher:bodyMatcher ?: defaultJSONBodyMatcher]);
+        if (bodyMatcher != nil) return withBody;
+        
+        return withBody
+            .withHeaders(@{ @"Content-Type": @"application/json" });
     };
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

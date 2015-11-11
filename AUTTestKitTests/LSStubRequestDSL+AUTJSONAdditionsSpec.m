@@ -13,7 +13,7 @@ SpecBegin(LSStubRequestDSL_AUTJSONAdditions)
 
 describe(@"when both data are equal", ^{
     it(@"should match", ^{
-        BodyMatcher matcher = [LSStubRequestDSL defaultJSONBodyMatcher];
+        BodyMatcher matcher = defaultJSONBodyMatcher;
         expect(matcher).notTo.beNil();
         
         NSData *body = [@"{\"foo\":\"bar\", \"bar\":\"foo\"}" dataUsingEncoding:NSUTF8StringEncoding];
@@ -24,7 +24,7 @@ describe(@"when both data are equal", ^{
 
 describe(@"when both data are different", ^{
     it(@"should not match", ^{
-        BodyMatcher matcher = [LSStubRequestDSL defaultJSONBodyMatcher];
+        BodyMatcher matcher = defaultJSONBodyMatcher;
         expect(matcher).notTo.beNil();
         
         NSData *body = [@"{\"foobar\":\"bar\", \"barfoo\":\"foo\"}" dataUsingEncoding:NSUTF8StringEncoding];
