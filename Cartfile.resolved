@@ -1,5 +1,5 @@
 github "luisobo/Nocilla" "0.10.0"
-github "ekurutepe/OCHamcrest" "db780ef2a4b8f15108cb3e22be8dc308fa5c98fc"
+github "hamcrest/OCHamcrest" "v5.1.0"
 github "specta/expecta" "v1.0.5"
 github "specta/specta" "c4bde15c321ef83e5a94c5a5d9dd7ac2f5c05b07"
-github "ekurutepe/OCMockito" "32eadb95255e17de36a04a0e93812394d05cb19b"
+github "ekurutepe/OCMockito" "v2.0.3-carthage"
