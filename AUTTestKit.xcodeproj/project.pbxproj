@@ -18,12 +18,6 @@
 		54E2DC101ACC1185009B4670 /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD21ACBF910009B4670 /* Specta.framework */; };
 		54E2DC171ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54E2DC181ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */; };
-		87E9781F1C0761EE0002E83B /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E9781D1C0761EE0002E83B /* OCHamcrest.framework */; };
-		87E978201C0761EE0002E83B /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E9781E1C0761EE0002E83B /* OCMockito.framework */; };
-		87E978271C0762760002E83B /* OCHamcrest.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 87E9781D1C0761EE0002E83B /* OCHamcrest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87E978281C0762760002E83B /* OCMockito.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 87E9781E1C0761EE0002E83B /* OCMockito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87E978291C0762910002E83B /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E9781D1C0761EE0002E83B /* OCHamcrest.framework */; };
-		87E9782A1C0762910002E83B /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E9781E1C0761EE0002E83B /* OCMockito.framework */; };
 		E4BC53B11B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC53B01B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m */; };
 		E4BC53B21B5E2E1A000F01B2 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD01ACBF910009B4670 /* Expecta.framework */; };
 		E4BC53B31B5E2E1A000F01B2 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBD11ACBF910009B4670 /* Nocilla.framework */; };
@@ -52,8 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87E978271C0762760002E83B /* OCHamcrest.framework in Copy Frameworks */,
-				87E978281C0762760002E83B /* OCMockito.framework in Copy Frameworks */,
 				E4BC53B61B5E2E3E000F01B2 /* Expecta.framework in Copy Frameworks */,
 				E4BC53B71B5E2E3E000F01B2 /* Nocilla.framework in Copy Frameworks */,
 				E4BC53B81B5E2E3E000F01B2 /* Specta.framework in Copy Frameworks */,
@@ -78,8 +70,6 @@
 		54E2DBF11ACC0730009B4670 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPTExampleGroup+AUTNocillaAdditions.h"; sourceTree = "<group>"; };
 		54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPTExampleGroup+AUTNocillaAdditions.m"; sourceTree = "<group>"; };
-		87E9781D1C0761EE0002E83B /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Carthage/Build/iOS/OCHamcrest.framework; sourceTree = "<group>"; };
-		87E9781E1C0761EE0002E83B /* OCMockito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockito.framework; path = Carthage/Build/iOS/OCMockito.framework; sourceTree = "<group>"; };
 		E4BC53B01B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSStubRequestDSL+AUTJSONAdditionsSpec.m"; sourceTree = "<group>"; };
 		E4BC53B91B5E2F52000F01B2 /* Specs.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Specs.pch; sourceTree = "<group>"; };
 		E4BC53BA1B5E314C000F01B2 /* AUTCustomBodyMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTCustomBodyMatcher.h; sourceTree = "<group>"; };
@@ -94,8 +84,6 @@
 				54E2DC0E1ACC1185009B4670 /* Expecta.framework in Frameworks */,
 				54E2DC0F1ACC1185009B4670 /* Nocilla.framework in Frameworks */,
 				54E2DC101ACC1185009B4670 /* Specta.framework in Frameworks */,
-				87E978291C0762910002E83B /* OCHamcrest.framework in Frameworks */,
-				87E9782A1C0762910002E83B /* OCMockito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +94,6 @@
 				54E2DBF21ACC0730009B4670 /* AUTTestKit.framework in Frameworks */,
 				E4BC53B21B5E2E1A000F01B2 /* Expecta.framework in Frameworks */,
 				E4BC53B31B5E2E1A000F01B2 /* Nocilla.framework in Frameworks */,
-				87E9781F1C0761EE0002E83B /* OCHamcrest.framework in Frameworks */,
-				87E978201C0761EE0002E83B /* OCMockito.framework in Frameworks */,
 				E4BC53B41B5E2E1A000F01B2 /* Specta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +161,6 @@
 		54E2DBD61ACBF914009B4670 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87E9781D1C0761EE0002E83B /* OCHamcrest.framework */,
-				87E9781E1C0761EE0002E83B /* OCMockito.framework */,
 				54E2DBD01ACBF910009B4670 /* Expecta.framework */,
 				54E2DBD11ACBF910009B4670 /* Nocilla.framework */,
 				54E2DBD21ACBF910009B4670 /* Specta.framework */,
