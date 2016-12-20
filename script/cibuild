@@ -1,7 +1,0 @@
-#!/bin/bash -ex
-
-if [ -z "$BUILD_TYPE" ]; then echo 'The BUILD_TYPE variable is unset, you must set it to continue.'; exit 1; fi
-
-eval "$(rbenv init -)"
-
-rake "$BUILD_TYPE"

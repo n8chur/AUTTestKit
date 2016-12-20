@@ -7,8 +7,8 @@ task :clean do
 end
 
 task :bootstrap do
-    sh('carthage checkout')
-    sh("carthage build #{CARTHAGE_BUILD_FLAGS} | #{PRETTIFY}")
+    # Bootstrap, downloading prebuilt frameworks from a cache if available.
+    eval(`arc paste P299`)
 end
 
 task :test do
@@ -22,7 +22,12 @@ task :coverage do
 end
 
 task :archive do
-    sh("carthage build #{CARTHAGE_ARCHIVE_FLAGS} | #{PRETTIFY}")
+    # Used by P299
+    CARTHAGE_NO_SKIP_CURRENT = true
+
+    # Bootstrap, downloading prebuilt frameworks from a cache if available.
+    eval(`arc paste P299`)
+
     sh("carthage archive #{LIBRARY_NAME} --output #{ARCHIVE_PATH}")
 end
 
@@ -40,20 +45,18 @@ end
 task :diff => [
     :validate_version,
     :clean,
-    :bootstrap,
+    :archive,
     :test,
     :coverage,
-    :archive
 ]
 
 task :ci => [
     :clean,
-    :bootstrap,
+    :archive,
     :test,
     :coverage,
-    :archive,
     :increment_version,
-    :upload_archive
+    :upload_archive,
 ]
 
 private
@@ -77,14 +80,5 @@ PRETTIFY = "xcpretty; exit ${PIPESTATUS[0]}"
 
 # Carthage
 
-CARTHAGE_BUILD_FLAGS =
-    "--platform iOS "\
-    "--verbose"
-
-CARTHAGE_ARCHIVE_FLAGS =
-    "--no-skip-current " +
-    CARTHAGE_BUILD_FLAGS
-
 PRODUCT_NAME = "#{LIBRARY_NAME}.framework"
-PRODUCT_PATH = "Carthage/Build/iOS/#{PRODUCT_NAME}"
 ARCHIVE_PATH = "#{PRODUCT_NAME}.zip"
