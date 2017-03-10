@@ -1,3 +1,5 @@
+github "automatic/AUTExtObjC" "dd0a38c5ad0b84d211421a950b7a543c0de2f657"
 github "luisobo/Nocilla" "0.10.0"
 github "specta/expecta" "v1.0.5"
-github "specta/specta" "v1.0.5"
+github "specta/specta" "v1.0.6"
+github "jspahrsummers/xcconfigs" "2055f18efbe18e77408f7f43947f7ad92b2d4ff0"

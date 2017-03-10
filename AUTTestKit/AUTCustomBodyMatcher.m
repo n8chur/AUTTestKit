@@ -6,18 +6,18 @@
 //  Copyright (c) 2015 Automatic. All rights reserved.
 //
 
+#import "AUTExtObjC.h"
 #import "AUTCustomBodyMatcher.h"
+
 #import "LSStubRequestDSL+AUTJSONAdditions.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-BodyMatcher defaultJSONBodyMatcher = ^BOOL(NSData *body, NSDictionary *expectedBody) {
-    // parse body into dictionary object
-    NSError *error = nil;
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:body options:0 error:&error];
-    if (json == nil || error != nil) {
-        return NO;
-    }
+BodyMatcher const defaultJSONBodyMatcher = ^(NSData *body, NSDictionary *expectedBody) {
+    // Parse body into dictionary object
+    NSError *error;
+    id json = [NSJSONSerialization JSONObjectWithData:body options:0 error:&error];
+    if (json == nil || ![json isKindOfClass:NSDictionary.class]) return NO;
     
     // compare objects
     return [json isEqualToDictionary:expectedBody];
@@ -25,31 +25,29 @@ BodyMatcher defaultJSONBodyMatcher = ^BOOL(NSData *body, NSDictionary *expectedB
 
 @interface AUTCustomBodyMatcher ()
 
-@property (nonatomic) NSDictionary *expectedBody;
+@property (nonatomic, copy) NSDictionary *expectedBody;
 @property (nonatomic, copy) BodyMatcher bodyMatcher;
 
 @end
 
 @implementation AUTCustomBodyMatcher
 
-- (instancetype)init {
-    @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"Use the designated initializer instead" userInfo:nil];
-}
+- (instancetype)init AUT_UNAVAILABLE_DESIGNATED_INITIALIZER;
 
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody {
-    NSParameterAssert(expectedBody != nil);
+    AUTAssertNotNil(expectedBody);
 
     return [self initWithExpectedBody:expectedBody customBodyMatcher:nil];
 }
+
 - (instancetype)initWithExpectedBody:(NSDictionary *)expectedBody customBodyMatcher:(nullable BodyMatcher)bodyMatcher {
-    NSParameterAssert(expectedBody != nil);
+    AUTAssertNotNil(expectedBody);
 
     self = [super init];
-    
-    if (self) {
-        _expectedBody = expectedBody;
-        _bodyMatcher  = [bodyMatcher ?: defaultJSONBodyMatcher copy];
-    }
+
+    _expectedBody = expectedBody;
+    _bodyMatcher = AUTNotNil([bodyMatcher ?: defaultJSONBodyMatcher copy]);
+
     return self;
 }
 

@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Automatic Labs. All rights reserved.
 //
 
+#import "AUTExtObjC.h"
+
 #import "LSStubResponseDSL+AUTJSONAdditions.h"
 
 @implementation LSStubResponseDSL (AUTJSONAdditions)
@@ -13,8 +15,7 @@
 - (ResponseWithJSONBodyMethod)withJSON {
     return ^(id body) {
         NSError *error;
-        NSData *data = [NSJSONSerialization dataWithJSONObject:body options:0 error:&error];
-
+        let data = [NSJSONSerialization dataWithJSONObject:body options:0 error:&error];
         NSAssert(data != nil, @"Could not serialize %@, received error: %@", body, error);
 
         return self
@@ -27,13 +28,11 @@
     return ^(NSString *body) {
         NSParameterAssert([body isKindOfClass:NSString.class]);
         
-        NSData *data = [body dataUsingEncoding:NSUTF8StringEncoding];
-        
+        let data = [body dataUsingEncoding:NSUTF8StringEncoding];
         NSAssert(data != nil, @"Could not convert %@ to data", body);
         
         NSError *error;
         id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-        
         NSAssert(jsonObj != nil, @"Invalid JSON string %@, received error: %@", body, error);
         
         return self
@@ -41,4 +40,5 @@
             .withBody(data);
     };
 }
+
 @end

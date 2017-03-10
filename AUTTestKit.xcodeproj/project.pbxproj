@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AAC095D1E73523800707134 /* AUTAssertNotNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC09551E73523800707134 /* AUTAssertNotNil.h */; };
+		3AAC095E1E73523800707134 /* AUTAutoType.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC09561E73523800707134 /* AUTAutoType.h */; };
+		3AAC095F1E73523800707134 /* AUTExtObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC09571E73523800707134 /* AUTExtObjC.h */; };
+		3AAC09601E73523800707134 /* AUTLocalizationNotNeeded.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC09581E73523800707134 /* AUTLocalizationNotNeeded.h */; };
+		3AAC09611E73523800707134 /* AUTNotNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC09591E73523800707134 /* AUTNotNil.h */; };
+		3AAC09621E73523800707134 /* AUTStrongifyOr.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC095A1E73523800707134 /* AUTStrongifyOr.h */; };
+		3AAC09631E73523800707134 /* AUTUnavailableDesignatedInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC095B1E73523800707134 /* AUTUnavailableDesignatedInitializer.h */; };
+		3AAC09641E73523800707134 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC095C1E73523800707134 /* metamacros.h */; };
 		54E2DBF21ACC0730009B4670 /* AUTTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */; };
 		54E2DC081ACC108A009B4670 /* AUTTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBB91ACBF7A5009B4670 /* AUTTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54E2DC091ACC108A009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2DBDD1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +64,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3AAC09421E7350CB00707134 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		3AAC09441E7350CB00707134 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		3AAC09451E7350CB00707134 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		3AAC09461E7350CB00707134 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		3AAC09471E7350CB00707134 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		3AAC09491E7350CB00707134 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		3AAC094A1E7350CB00707134 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		3AAC094B1E7350CB00707134 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		3AAC094D1E7350CB00707134 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		3AAC094E1E7350CB00707134 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		3AAC094F1E7350CB00707134 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		3AAC09501E7350CB00707134 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		3AAC09511E73513900707134 /* AUTTestKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = AUTTestKit.xcconfig; path = AUTTestKit/AUTTestKit.xcconfig; sourceTree = SOURCE_ROOT; };
+		3AAC09521E73514600707134 /* AUTTestKitTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = AUTTestKitTests.xcconfig; path = AUTTestKit/AUTTestKitTests.xcconfig; sourceTree = SOURCE_ROOT; };
+		3AAC09551E73523800707134 /* AUTAssertNotNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAssertNotNil.h; sourceTree = "<group>"; };
+		3AAC09561E73523800707134 /* AUTAutoType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAutoType.h; sourceTree = "<group>"; };
+		3AAC09571E73523800707134 /* AUTExtObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTExtObjC.h; sourceTree = "<group>"; };
+		3AAC09581E73523800707134 /* AUTLocalizationNotNeeded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTLocalizationNotNeeded.h; sourceTree = "<group>"; };
+		3AAC09591E73523800707134 /* AUTNotNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTNotNil.h; sourceTree = "<group>"; };
+		3AAC095A1E73523800707134 /* AUTStrongifyOr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTStrongifyOr.h; sourceTree = "<group>"; };
+		3AAC095B1E73523800707134 /* AUTUnavailableDesignatedInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTUnavailableDesignatedInitializer.h; sourceTree = "<group>"; };
+		3AAC095C1E73523800707134 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		54E2DBB81ACBF7A5009B4670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E2DBB91ACBF7A5009B4670 /* AUTTestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUTTestKit.h; sourceTree = "<group>"; };
 		54E2DBC51ACBF7A5009B4670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,11 +97,10 @@
 		54E2DBDD1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSStubRequestDSL+AUTJSONAdditions.h"; sourceTree = "<group>"; };
 		54E2DBDE1ACBFA94009B4670 /* LSStubRequestDSL+AUTJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSStubRequestDSL+AUTJSONAdditions.m"; sourceTree = "<group>"; };
 		54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AUTTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54E2DBF11ACC0730009B4670 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E2DBF11ACC0730009B4670 /* AUTTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUTTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E2DC151ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPTExampleGroup+AUTNocillaAdditions.h"; sourceTree = "<group>"; };
 		54E2DC161ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPTExampleGroup+AUTNocillaAdditions.m"; sourceTree = "<group>"; };
 		E4BC53B01B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSStubRequestDSL+AUTJSONAdditionsSpec.m"; sourceTree = "<group>"; };
-		E4BC53B91B5E2F52000F01B2 /* Specs.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Specs.pch; sourceTree = "<group>"; };
 		E4BC53BA1B5E314C000F01B2 /* AUTCustomBodyMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTCustomBodyMatcher.h; sourceTree = "<group>"; };
 		E4BC53BB1B5E314C000F01B2 /* AUTCustomBodyMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTCustomBodyMatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,13 +130,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AAC09401E7350AA00707134 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC09511E73513900707134 /* AUTTestKit.xcconfig */,
+				3AAC09521E73514600707134 /* AUTTestKitTests.xcconfig */,
+				3AAC09411E7350CB00707134 /* Base */,
+				3AAC094C1E7350CB00707134 /* iOS */,
+			);
+			name = Configurations;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		3AAC09411E7350CB00707134 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC09421E7350CB00707134 /* Common.xcconfig */,
+				3AAC09431E7350CB00707134 /* Configurations */,
+				3AAC09481E7350CB00707134 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3AAC09431E7350CB00707134 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC09441E7350CB00707134 /* Debug.xcconfig */,
+				3AAC09451E7350CB00707134 /* Profile.xcconfig */,
+				3AAC09461E7350CB00707134 /* Release.xcconfig */,
+				3AAC09471E7350CB00707134 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		3AAC09481E7350CB00707134 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC09491E7350CB00707134 /* Application.xcconfig */,
+				3AAC094A1E7350CB00707134 /* Framework.xcconfig */,
+				3AAC094B1E7350CB00707134 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		3AAC094C1E7350CB00707134 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC094D1E7350CB00707134 /* iOS-Application.xcconfig */,
+				3AAC094E1E7350CB00707134 /* iOS-Base.xcconfig */,
+				3AAC094F1E7350CB00707134 /* iOS-Framework.xcconfig */,
+				3AAC09501E7350CB00707134 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3AAC09531E73522900707134 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC09541E73523800707134 /* AUTExtObjC */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		3AAC09541E73523800707134 /* AUTExtObjC */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC09551E73523800707134 /* AUTAssertNotNil.h */,
+				3AAC09561E73523800707134 /* AUTAutoType.h */,
+				3AAC09571E73523800707134 /* AUTExtObjC.h */,
+				3AAC09581E73523800707134 /* AUTLocalizationNotNeeded.h */,
+				3AAC09591E73523800707134 /* AUTNotNil.h */,
+				3AAC095A1E73523800707134 /* AUTStrongifyOr.h */,
+				3AAC095B1E73523800707134 /* AUTUnavailableDesignatedInitializer.h */,
+				3AAC095C1E73523800707134 /* metamacros.h */,
+			);
+			name = AUTExtObjC;
+			path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC;
+			sourceTree = "<group>";
+		};
 		54E2DBAA1ACBF7A5009B4670 = {
 			isa = PBXGroup;
 			children = (
 				54E2DBB61ACBF7A5009B4670 /* AUTTestKit */,
-				54E2DBC31ACBF7A5009B4670 /* Specs */,
+				54E2DBC31ACBF7A5009B4670 /* AUTTestKitTests */,
+				3AAC09401E7350AA00707134 /* Configurations */,
 				54E2DBD61ACBF914009B4670 /* Frameworks */,
 				54E2DBB51ACBF7A5009B4670 /* Products */,
+				3AAC09531E73522900707134 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */,
-				54E2DBF11ACC0730009B4670 /* Specs.xctest */,
+				54E2DBF11ACC0730009B4670 /* AUTTestKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,13 +248,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		54E2DBC31ACBF7A5009B4670 /* Specs */ = {
+		54E2DBC31ACBF7A5009B4670 /* AUTTestKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				E4BC53B01B5E2D97000F01B2 /* LSStubRequestDSL+AUTJSONAdditionsSpec.m */,
 				54E2DBC41ACBF7A5009B4670 /* Supporting Files */,
 			);
-			name = Specs;
 			path = AUTTestKitTests;
 			sourceTree = "<group>";
 		};
@@ -153,7 +261,6 @@
 			isa = PBXGroup;
 			children = (
 				54E2DBC51ACBF7A5009B4670 /* Info.plist */,
-				E4BC53B91B5E2F52000F01B2 /* Specs.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,11 +304,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAC09641E73523800707134 /* metamacros.h in Headers */,
+				3AAC09601E73523800707134 /* AUTLocalizationNotNeeded.h in Headers */,
+				3AAC09631E73523800707134 /* AUTUnavailableDesignatedInitializer.h in Headers */,
 				54E2DC0A1ACC108A009B4670 /* LSStubResponseDSL+AUTJSONAdditions.h in Headers */,
 				54E2DC091ACC108A009B4670 /* LSStubRequestDSL+AUTJSONAdditions.h in Headers */,
+				3AAC09611E73523800707134 /* AUTNotNil.h in Headers */,
 				54E2DC081ACC108A009B4670 /* AUTTestKit.h in Headers */,
+				3AAC095F1E73523800707134 /* AUTExtObjC.h in Headers */,
 				54E2DC171ACC1381009B4670 /* SPTExampleGroup+AUTNocillaAdditions.h in Headers */,
 				E4BC53BC1B5E314C000F01B2 /* AUTCustomBodyMatcher.h in Headers */,
+				3AAC095E1E73523800707134 /* AUTAutoType.h in Headers */,
+				3AAC09621E73523800707134 /* AUTStrongifyOr.h in Headers */,
+				3AAC095D1E73523800707134 /* AUTAssertNotNil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,9 +342,9 @@
 			productReference = 54E2DBE71ACC0730009B4670 /* AUTTestKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		54E2DBF01ACC0730009B4670 /* Specs */ = {
+		54E2DBF01ACC0730009B4670 /* AUTTestKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildConfigurationList = 54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "AUTTestKitTests" */;
 			buildPhases = (
 				54E2DBED1ACC0730009B4670 /* Sources */,
 				54E2DBEE1ACC0730009B4670 /* Frameworks */,
@@ -241,9 +356,9 @@
 			dependencies = (
 				54E2DBF41ACC0730009B4670 /* PBXTargetDependency */,
 			);
-			name = Specs;
+			name = AUTTestKitTests;
 			productName = AUTTestKitTests;
-			productReference = 54E2DBF11ACC0730009B4670 /* Specs.xctest */;
+			productReference = 54E2DBF11ACC0730009B4670 /* AUTTestKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -276,7 +391,7 @@
 			projectRoot = "";
 			targets = (
 				54E2DBE61ACC0730009B4670 /* AUTTestKit */,
-				54E2DBF01ACC0730009B4670 /* Specs */,
+				54E2DBF01ACC0730009B4670 /* AUTTestKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,171 +464,43 @@
 /* Begin XCBuildConfiguration section */
 		54E2DBC81ACBF7A5009B4670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAC09441E7350CB00707134 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 		54E2DBC91ACBF7A5009B4670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAC09461E7350CB00707134 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 		54E2DBFB1ACC0730009B4670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAC09511E73513900707134 /* AUTTestKit.xcconfig */;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AUTTestKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		54E2DBFC1ACC0730009B4670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAC09511E73513900707134 /* AUTTestKit.xcconfig */;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = AUTTestKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		54E2DBFE1ACC0730009B4670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAC09521E73514600707134 /* AUTTestKitTests.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_PREFIX_HEADER = AUTTestKitTests/Specs.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AUTTestKitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		54E2DBFF1ACC0730009B4670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAC09521E73514600707134 /* AUTTestKitTests.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_PREFIX_HEADER = AUTTestKitTests/Specs.pch;
-				INFOPLIST_FILE = AUTTestKitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -538,7 +525,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+		54E2DBFD1ACC0730009B4670 /* Build configuration list for PBXNativeTarget "AUTTestKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54E2DBFE1ACC0730009B4670 /* Debug */,

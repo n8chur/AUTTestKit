@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef BOOL(^BodyMatcher)(NSData *body, NSDictionary *expectedBody);
 
 /// A default matcher for a JSON string
-extern BodyMatcher defaultJSONBodyMatcher;
+extern BodyMatcher const defaultJSONBodyMatcher;
 
 @interface AUTCustomBodyMatcher : NSObject <LSMatcheable>
 
